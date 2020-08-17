@@ -1,9 +1,15 @@
 
 /*----------general styles-----------*/
-  body{
+html {
+
+    overflow-x: hidden;
+}  
+
+body{
     margin: auto;
     box-sizing: border-box;
     background-image: url("./images/bg-img.jpg");
+    width: 100%;
   }
 
 li{
@@ -23,6 +29,11 @@ li{
   .flex {
       display: flex;
   }
+
+  @font-face {
+      font-family: my-cocofont;
+      src: url(COCOGOOSELETTERPRESS-TRIAL.ttf);
+  }
   
 /*----------Navbar-----------*/
 
@@ -31,6 +42,8 @@ li{
     /* background-color: #ec5242; */
     background-color:  #272a31;
     height: 11.3vh;
+    /* position: fixed; */
+    /* z-index: 99; */
   }
   
   ul{
@@ -56,7 +69,7 @@ li{
   }
   
   a:hover{
-    background-color: #ec5242;
+    background: radial-gradient(#ec5242,#f1958b ) ;
     color: black;
     /* height: 190vh; */
   }
@@ -74,8 +87,11 @@ li{
   .main-section {
     /* background-image: url("./images/bg-img.jpg"); */
       /* background: linear-gradient(#d3d3d3, #d5d5d5); */
-      height: 100vh;
-      margin-top: -25px;
+      height: 100%;
+      margin-top: -33px;
+      background: radial-gradient(#ec5242,#f1958b ) ;
+      position: relative;
+      padding-top: -4rem;
   }
 
 
@@ -93,25 +109,56 @@ li{
       font-size: x-large;
       margin-bottom: 2rem;
       margin-top: 2rem;
+      /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
+      color: #d3d3d3;
+      /* text-shadow: 2px 2px 4px #000000; */
+      animation: mymove 2s infinite;
+      /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+      font-family: my-cocofont;
+  }
+  @keyframes mymove {
+    50% {text-shadow: 10px 20px 30px blue;}
   }
 
+  /* @keyframes mymove {
+    50% {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
+  } */
+
   .conf-date{
-      justify-content: space-evenly;
+      justify-content: space-around;
       margin-top: 2rem;
   }
 
   .when {
       text-align: center;
+      font-family: 'Lato', sans-serif;
+      border: 2px solid darkslategrey;
+      width: 20rem;
+      background-color: #d3d3d3;
+      border-radius: 1rem;
+      box-shadow: #272a31;
+  }
+
+  .when p {
+      font-size: small;
+      margin-top: 1rem;
+      color: #ec5242;
+  }
+
+  .when h4 {
+      font-size: large;
   }
 
   .submission-text {
       text-align: center;
-      background-color: #ec5242;
+      background-color: #272a31;
       width: 30%;
       margin-left: 450px;
       border-radius: 5px;
       /* padding: 0.01px 0; */
       margin-top: 1rem;
+
+      color: aliceblue;
   }
 
   .submission {
@@ -127,8 +174,8 @@ li{
   }
 
   .submission-button button {
-    background-color: blue;
-    color: white;
+    background-color: #d3d3d3;
+    color: #272a31;
     border-radius: 10px;
   }
 
@@ -137,7 +184,7 @@ li{
   }
 
   .main-program-container {
-      background-color: gray;
+      background-color: #d3d3d3;
       padding: 1rem 0;
   }
 
@@ -156,23 +203,76 @@ height: 15rem;
 background-color: #272a31;
 border:0.5px solid #d3d3d3;
 margin-left: 1px;
+justify-content: center;
+flex-direction: column;
   }
+
+  .slides:hover {
+    width: 10rem;
+    height: 17rem; 
+  }
+
+  .slides img {
+margin-left: 3.5rem;
+margin-top: -5rem;
+width: 50px;
+height: 50px;
+  }
+
+  .slides h4{
+      color: #ec5242;
+      text-align: center;
+      font-size: large;
+  }
+
+
+
+  .slides p {
+    color: antiquewhite;
+    text-align: center;
+    font-size: small;
+    /* line-height: 1; */
+    margin: 0 2px;
+}
 
   .entire-program-link {
       text-align: center;
+      color: black;
       margin-top: 1rem;
+      font-weight: 700;
+    font-size: large;
+    text-decoration: underline;
   }
 
-  .entire-program-link a:hover{
-    /* background-color: #ec5242; */
-    color: black;
+  .entire-program-link p:hover{
+    color: #ec5242;
+    font-weight: 700;
     /* height: 190vh; */
   }
 
   .image-size {
-      width: 95px;
-      height: 95px;
+      width: 145px;
+      height: 145px;
   }
+
+  .card-font {
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+}
+
+  .underline-red {
+    color: #ec5242;
+    font-size: 14px;
+  }
+
+  .underline-red:hover {
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-size: 18px;
+  }
+
+
 
   .partners-container{
       height: 20rem;
@@ -200,6 +300,8 @@ margin-left: 1px;
       height: 10rem;
       width: 100%;
       background-color: #d3d3d3;
+      text-align: center;
+      padding-top: 5rem;
   }
 /*----------MEDIA QUERIES-----------*/
 
@@ -260,5 +362,24 @@ body {
 
     .submission-button {
         margin-left: 48px;
+    }
+
+    .main-program {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 4rem;
+    }
+
+    .slides:hover {
+        display: none;
+      }
+
+      .partner-logo{
+        flex-direction: row;
+        margin-left: 6rem;
+        width: 40px;
+        height: 40px;
+        margin-top: 0.5rem;
+        justify-content: center;
     }
   }
