@@ -1,7 +1,9 @@
 
 /*----------general styles-----------*/
   body{
-    margin: 0;
+    margin: auto;
+    box-sizing: border-box;
+    background-image: url("./images/bg-img.jpg");
   }
 
 li{
@@ -14,7 +16,7 @@ li{
     text-decoration: none;
     color: beige;
     font-family: monospace;
-  
+  /* margin-top: 1rem; */
     padding: 2vw;
   }
 
@@ -25,8 +27,9 @@ li{
 /*----------Navbar-----------*/
 
   nav{
-    width: 100vw;
-    background-color: #ec5242;
+    width: 100vw;  
+    /* background-color: #ec5242; */
+    background-color:  #272a31;
     height: 11.3vh;
   }
   
@@ -48,46 +51,164 @@ li{
   }
 
   
-  button{
+  ul button{
     display: none;
   }
   
   a:hover{
-    background-color: #C6E9FF;
+    background-color: #ec5242;
     color: black;
     /* height: 190vh; */
   }
-/* 
+
   .link-animation {
-      background-color: blue;
-      border-radius: 50%;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      justify-content: center; */
+    /* border: 1px solid yellow; */
   }
 
   /*----------MAIN SECTION-----------*/
 
   main {
-      background: linear-gradient(#d3d3d3, #d5d5d5);
+    /* background-image: url("./images/bg-img.jpg"); */
+  }
+
+  .main-section {
+    /* background-image: url("./images/bg-img.jpg"); */
+      /* background: linear-gradient(#d3d3d3, #d5d5d5); */
       height: 100vh;
       margin-top: -25px;
+  }
+
+
+
+  h1, h3, h5 {
+    text-align: center;
   }
 
   .main-text {
       /* justify-content: center;
       align-items: center; */
       align-content: center;
-      padding-top: 30vh;
-      padding-left: 30vw;
+      padding-top: 8vh;
+      /* padding-left: 30vw; */
       font-size: x-large;
-      font-family:;
-    
+      margin-bottom: 2rem;
+      margin-top: 2rem;
   }
-  
+
+  .conf-date{
+      justify-content: space-evenly;
+      margin-top: 2rem;
+  }
+
+  .when {
+      text-align: center;
+  }
+
+  .submission-text {
+      text-align: center;
+      background-color: #ec5242;
+      width: 30%;
+      margin-left: 450px;
+      border-radius: 5px;
+      /* padding: 0.01px 0; */
+      margin-top: 1rem;
+  }
+
+  .submission {
+      flex-direction: column;
+      justify-items: center;
+      justify-content: center;
+      align-content: center;
+  }
+
+  .submission-button {
+    margin-left: 260px; 
+    padding: 10px;
+  }
+
+  .submission-button button {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .submission-button button:hover { 
+      background-color: #272a31;
+  }
+
+  .main-program-container {
+      background-color: gray;
+      padding: 1rem 0;
+  }
+
+  .main-program-title {
+      text-align: center;
+      
+  }
+
+  .main-program {
+      margin-left: 250px;
+  }
+
+  .slides {
+width: 10rem;
+height: 15rem;
+background-color: #272a31;
+border:0.5px solid #d3d3d3;
+margin-left: 1px;
+  }
+
+  .entire-program-link {
+      text-align: center;
+      margin-top: 1rem;
+  }
+
+  .entire-program-link a:hover{
+    /* background-color: #ec5242; */
+    color: black;
+    /* height: 190vh; */
+  }
+
+  .image-size {
+      width: 95px;
+      height: 95px;
+  }
+
+  .partners-container{
+      height: 20rem;
+      width: 100%;
+      background-color: #272a31;
+  }
+
+  .partners-title {
+      color: #ec5242;
+      text-align: center;
+      margin-top: 1rem;
+      padding-top: 1rem;
+  }
+
+.partner-logo {
+    width: 120px;
+    height: 100px;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+
+  .footer-container {
+      height: 10rem;
+      width: 100%;
+      background-color: #d3d3d3;
+  }
 /*----------MEDIA QUERIES-----------*/
 
   @media only screen and (max-width: 767px) {
+body {
+    overflow-x: hidden;
+    /* width: 100%; */
+}
+
     ul{
       flex-direction: column;
     }
@@ -96,6 +217,10 @@ li{
         width: 100vw;
         background-color: #ec5242;
         height: 45vh;
+      }
+
+      main {
+          width: 100%;
       }
     
     a{
@@ -121,5 +246,19 @@ li{
       cursor: pointer;
       
       align-self: flex-start;
+    }
+
+    .submission {
+        /* display: block; */
+        margin-left: 0;
+    }
+
+    .submission-text {
+        margin-left: 70px;
+        width: 20rem;
+    }
+
+    .submission-button {
+        margin-left: 48px;
     }
   }
