@@ -98,6 +98,7 @@ li{
 
   h1, h3, h5 {
     text-align: center;
+    color: #ec5242;
   }
 
   .main-text {
@@ -123,155 +124,62 @@ li{
   /* @keyframes mymove {
     50% {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
   } */
+.step-1 {
+    width: 40%;
+    justify-content: center;
+    border: 2px solid gray;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 2rem;
+}
 
-  .conf-date{
-      justify-content: space-around;
-      margin-top: 2rem;
-  }
-
-  .when {
-      text-align: center;
-      font-family: 'Lato', sans-serif;
-      border: 2px solid darkslategrey;
-      width: 20rem;
-      background-color: #d3d3d3;
-      border-radius: 1rem;
-      box-shadow: #272a31;
-  }
-
-  .when p {
-      font-size: small;
-      margin-top: 1rem;
-      color: #ec5242;
-  }
-
-  .when h4 {
-      font-size: large;
-  }
-
-  .submission-text {
-      text-align: center;
-      background-color: #272a31;
-      width: 30%;
-      margin-left: 450px;
-      border-radius: 5px;
-      /* padding: 0.01px 0; */
-      margin-top: 1rem;
-
-      color: aliceblue;
-  }
-
-  .submission {
-      flex-direction: column;
-      justify-items: center;
-      justify-content: center;
-      align-content: center;
-  }
-
-  .submission-button {
-    margin-left: 260px; 
-    padding: 10px;
-  }
-
-  .submission-button button {
-    background-color: #d3d3d3;
-    color: #272a31;
-    border-radius: 10px;
-  }
-
-  .submission-button button:hover { 
-      background-color: #272a31;
-  }
-
-  .main-program-container {
-      background-color: #d3d3d3;
-      padding: 1rem 0;
-  }
-
-  .main-program-title {
-      text-align: center;
-      
-  }
-
-  .main-program {
-      margin-left: 250px;
-  }
-
-  .slides {
-width: 10rem;
-height: 15rem;
-background-color: #272a31;
-border:0.5px solid #d3d3d3;
-margin-left: 1px;
-justify-content: center;
-flex-direction: column;
-  }
-
-  .slides:hover {
-    width: 10rem;
-    height: 17rem; 
-  }
-
-  .slides img {
-margin-left: 3.5rem;
-margin-top: -5rem;
-width: 50px;
-height: 50px;
-  }
-
-  .slides h4{
-      color: #ec5242;
-      text-align: center;
-      font-size: large;
-  }
-
-
-
-  .slides p {
-    color: antiquewhite;
+.step-1 p {
     text-align: center;
-    font-size: small;
-    /* line-height: 1; */
-    margin: 0 2px;
 }
 
-  .entire-program-link {
-      text-align: center;
-      color: black;
-      margin-top: 1rem;
-      font-weight: 700;
-    font-size: large;
-    text-decoration: underline;
-  }
-
-  .entire-program-link p:hover{
-    color: #ec5242;
-    font-weight: 700;
-    /* height: 190vh; */
-  }
-
-  .image-size {
-      width: 145px;
-      height: 145px;
-  }
-
-  .card-font {
-    font-size: 12px;
-    font-family: 'Lato', sans-serif;
-    line-height: 2;
+.step-1 span {
+    color: #f1958b;
 }
 
-  .underline-red {
-    color: #ec5242;
-    font-size: 14px;
-  }
 
-  .underline-red:hover {
-    text-decoration: underline;
-    text-decoration-color: red;
-    font-size: 18px;
-  }
+  table {
+    border-collapse: collapse;  
+    margin-left: auto;  
+    margin-right: auto;
+    padding-bottom: 2rem;
+    outline-style: dotted;
+    /* outline-offset: 0.5rem; */
+    outline-color: chocolate;
+}
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
 
+th {
+    background-color: #d3d3d3;
+}
+
+.lunch-section {
+    background-color: rgb(245, 240, 240);
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.step-2 {
+    width: 60%;
+}
+
+.submit-button {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20rem;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0.5rem 0;
+}
 
 
   .partners-container{
@@ -297,12 +205,26 @@ height: 50px;
 }
 
   .footer-container {
-      height: 10rem;
+      height: 100%;
       width: 100%;
       background-color: #d3d3d3;
       text-align: center;
       padding-top: 5rem;
+      margin-top: 1rem;
   }
+
+  .footer-container ul{
+    padding-bottom: 1rem;
+    justify-content: center;
+}
+
+.footer-container ul li{
+  margin-right: 0.5rem;
+}
+
+.footer-container ul li a{
+  color: black !important;
+}
 /*----------MEDIA QUERIES-----------*/
 
   @media only screen and (max-width: 767px) {
