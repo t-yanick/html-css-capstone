@@ -124,12 +124,18 @@ li{
   /* @keyframes mymove {
     50% {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
   } */
+
+div h3 {
+    margin: 2rem 0;
+}
+
 .step-1 {
     width: 40%;
     justify-content: center;
     border: 2px solid gray;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 0.5rem;
     border-radius: 2rem;
 }
@@ -172,6 +178,20 @@ th {
     width: 60%;
 }
 
+.menu-table {
+    outline-style: solid;
+    outline-color: #272a31;
+    
+}
+
+.menu-table td,th {
+    border: none;
+}
+
+.mobile-display {
+    display: none;
+}
+
 .submit-button {
     margin-left: auto;
     margin-right: auto;
@@ -179,6 +199,9 @@ th {
     text-align: center;
     margin-top: 2rem;
     padding: 0.5rem 0;
+    background-color: #ec5242;
+    border-radius: 2rem;
+    justify-content: center;
 }
 
 
@@ -259,42 +282,20 @@ body {
       margin: 0;
     }
     
-    button{
-      display: block;
-      
-      padding: 2vw;
-      font-size: 3vh;
-      background-color: #AFE0FF;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      
-      align-self: flex-start;
-    }
+ .step-1 {
+     width: 95%;
+ }
 
-    .submission {
-        /* display: block; */
-        margin-left: 0;
-    }
+ .desktop-display {
+     display: none;
+ }
 
-    .submission-text {
-        margin-left: 70px;
-        width: 20rem;
-    }
+ .mobile-display {
+     display: flex;
+     flex-direction: column;
+ }
 
-    .submission-button {
-        margin-left: 48px;
-    }
-
-    .main-program {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-left: 4rem;
-    }
-
-    .slides:hover {
-        display: none;
-      }
+   
 
       .partner-logo{
         flex-direction: row;
