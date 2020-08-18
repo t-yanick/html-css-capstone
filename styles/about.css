@@ -74,15 +74,8 @@ li{
   
   }
 
-  .link-animation {
-    /* border: 1px solid yellow; */
-  }
-
   /*----------MAIN SECTION-----------*/
 
-  main {
-    /* background-image: url("./images/bg-img.jpg"); */
-  }
 
   .main-section-container {
     /* background-image: url("./images/bg-img.jpg"); */
@@ -358,43 +351,36 @@ body {
     li{
       margin: 0;
     }
+
+    .about-text {
+        margin-left: 3.5rem;
+        width: 24rem;
+    }
+
+    .mailing-list {
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+        width: 95%;
+    }
     
-    button{
-      display: block;
-      
-      padding: 2vw;
-      font-size: 3vh;
-      background-color: #AFE0FF;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      
-      align-self: flex-start;
+.subscribe {
+    width: 90%;
+    margin-left: 1.5rem;
+}
+
+    .twitter-follow {
+        padding-bottom: 1rem;
+        margin-left: 1.5rem;
+        width: 90%;
     }
 
-    .submission {
-        /* display: block; */
-        margin-left: 0;
-    }
+   .past-congress {
+       flex-direction: column;
+   }
 
-    .submission-text {
-        margin-left: 70px;
-        width: 20rem;
-    }
-
-    .submission-button {
-        margin-left: 48px;
-    }
-
-    .main-program {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-left: 4rem;
-    }
-
-    .slides:hover {
-        display: none;
-      }
+   .buea-2014 {
+       margin-bottom: 1rem;
+   }
 
       .partner-logo{
         flex-direction: row;

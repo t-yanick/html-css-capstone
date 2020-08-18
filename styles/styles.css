@@ -407,6 +407,10 @@ body {
         display: none;
       }
 
+.partners-container {
+    height: 10rem;
+}
+
       .partner-logo{
         flex-direction: row;
         margin-left: 6rem;
