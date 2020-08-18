@@ -22,7 +22,7 @@ li{
     text-decoration: none;
     color: beige;
     font-family: monospace;
-  /* margin-top: 1rem; */
+  margin-top: 1rem;
     padding: 2vw;
   }
 
@@ -70,8 +70,8 @@ li{
   
   a:hover{
     background: radial-gradient(#ec5242,#f1958b ) ;
-    color: black;
-    /* height: 190vh; */
+    color: black; 
+  
   }
 
   .link-animation {
@@ -84,12 +84,13 @@ li{
     /* background-image: url("./images/bg-img.jpg"); */
   }
 
-  .main-section {
+  .main-section-container {
     /* background-image: url("./images/bg-img.jpg"); */
       /* background: linear-gradient(#d3d3d3, #d5d5d5); */
       height: 100%;
       margin-top: -33px;
-      background: radial-gradient(#ec5242,#f1958b ) ;
+      /* background: radial-gradient(#ec5242,#f1958b ) ; */
+      background: linear-gradient(#d3d3d3,#8f8483 ) ; 
       position: relative;
       padding-top: -4rem;
   }
@@ -124,155 +125,160 @@ li{
     50% {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
   } */
 
+
+.about-text {
+    width: 50%;
+    height: 40%;
+    /* background-color: #d3d3d3; */
+    background-color: #272a31;
+    margin-left: 20rem;
+    margin-top: 4rem;
+    text-align: center;
+    color: greenyellow;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+
+.mailing-list {
+    text-align: center;
+    margin-left: 7rem;
+    width: 80%;
+}
+
+.subscribe {
+    flex-direction: column;
+    width: 80%;
+    margin-left: 7rem;
+}
+
+#email {
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.subscribe-btn {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    display: inline-block;
+/* padding: 15px 25px; */
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: white;
+background-color: CORAL;
+border: none;
+border-radius: 15px;
+box-shadow: 0 10px #999;
+}
+
+.subscribe-btn:hover {background-color: coral}
+.subscribe-btn:active {
+background-color: coral;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+.twitter-follow {
+    padding-bottom: 1rem;
+    margin-left: 25rem;
+}
+
+.twitter-follow span {
+    color: #ec5242;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.past-congress {
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+}
+
+.past-congress-text {
+    padding-top: 1rem;
+}
+
+.past-congress-text h3 {
+    color: #ec5242;
+    font-weight: 900;
+}
+
+.past-congress-text p {
+    color: #272a31;
+    font-weight: 500;
+    text-align: center;
+}
+
+.buea-2014 {
+    background-image: url(../images/buea-2014.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25rem;
+    height: 20rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    border-radius: 2rem;
+}
+
+.douala-2017 {
+    background-image: url(../images/douala-2017.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25rem;
+    height: 20rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.buea-2014 h1 {
+    margin-top: 7rem;
+    color: red;
+}
+
+.buea-2014 h1:hover {
+    text-decoration: underline;
+    color:rgb(7, 241, 7);
+}
+
+.buea-2014 h3 {
+    color: red;
+}
+
+.buea-2014 h3:hover {
+    text-decoration: underline;
+    color:rgb(7, 241, 7);
+}
+
+.douala-2017 h1 {
+    margin-top: 7rem;
+    color: red;
+}
+
+.douala-2017 h1:hover {
+    text-decoration: underline;
+    color:rgb(7, 241, 7);
+}
+.douala-2017 h3 {
+    color: red;
+}
+
+.douala-2017 h3:hover {
+    text-decoration: underline;
+    color:rgb(7, 241, 7);
+}
+
   .conf-date{
       justify-content: space-around;
       margin-top: 2rem;
   }
 
-  .when {
-      text-align: center;
-      font-family: 'Lato', sans-serif;
-      border: 2px solid darkslategrey;
-      width: 20rem;
-      background-color: #d3d3d3;
-      border-radius: 1rem;
-      box-shadow: #272a31;
-  }
-
-  .when p {
-      font-size: small;
-      margin-top: 1rem;
-      color: #ec5242;
-      font-weight: 900;
-      font-family: Georgia, 'Times New Roman', Times, serif;
-  }
-
-  .when h4 {
-      font-size: large;
-  }
-
-  .submission-text {
-      text-align: center;
-      background-color: #272a31;
-      width: 30%;
-      margin-left: 450px;
-      border-radius: 5px;
-      /* padding: 0.01px 0; */
-      margin-top: 1rem;
-
-      color: aliceblue;
-  }
-
-  .submission {
-      flex-direction: column;
-      justify-items: center;
-      justify-content: center;
-      align-content: center;
-  }
-
-  .submission-button {
-    margin-left: 260px; 
-    padding: 10px;
-  }
-
-  .submission-button button {
-    background-color: #d3d3d3;
-    color: #272a31;
-    border-radius: 10px;
-  }
-
-  .submission-button button:hover { 
-      background-color: #272a31;
-  }
-
-  .main-program-container {
-      background-color: #d3d3d3;
-      padding: 1rem 0;
-  }
-
-  .main-program-title {
-      text-align: center;
-      
-  }
-
-  .main-program {
-      margin-left: 250px;
-  }
-
-  .slides {
-width: 10rem;
-height: 15rem;
-background-color: #272a31;
-border:0.5px solid #d3d3d3;
-margin-left: 1px;
-justify-content: center;
-flex-direction: column;
-  }
-
-  .slides:hover {
-    width: 10rem;
-    height: 17rem; 
-  }
-
-  .slides img {
-margin-left: 3.5rem;
-margin-top: -5rem;
-width: 50px;
-height: 50px;
-  }
-
-  .slides h4{
-      color: #ec5242;
-      text-align: center;
-      font-size: large;
-  }
-
-
-
-  .slides p {
-    color: antiquewhite;
-    text-align: center;
-    font-size: small;
-    /* line-height: 1; */
-    margin: 0 2px;
-}
-
-  .entire-program-link {
-      text-align: center;
-      color: black;
-      margin-top: 1rem;
-      font-weight: 700;
-    font-size: large;
-    text-decoration: underline;
-  }
-
-  .entire-program-link p:hover{
-    color: #ec5242;
-    font-weight: 700;
-    /* height: 190vh; */
-  }
-
-  .image-size {
-      width: 145px;
-      height: 145px;
-  }
-
-  .card-font {
-    font-size: 12px;
-    font-family: 'Lato', sans-serif;
-    line-height: 2;
-}
-
-  .underline-red {
-    color: #ec5242;
-    font-size: 14px;
-  }
-
-  .underline-red:hover {
-    text-decoration: underline;
-    text-decoration-color: red;
-    font-size: 18px;
-  }
+  
 
 
 
@@ -299,12 +305,26 @@ height: 50px;
 }
 
   .footer-container {
-      height: 10rem;
+      height: 12rem;
       width: 100%;
+      height: 100%;
       background-color: #d3d3d3;
       text-align: center;
-      padding-top: 5rem;
+      padding-top: 2rem;
   }
+
+  .footer-container ul{
+      padding-bottom: 1rem;
+      justify-content: center;
+  }
+
+  .footer-container ul li{
+    margin-right: 0.5rem;
+}
+
+.footer-container ul li a{
+    color: black !important;
+}
 /*----------MEDIA QUERIES-----------*/
 
   @media only screen and (max-width: 767px) {
