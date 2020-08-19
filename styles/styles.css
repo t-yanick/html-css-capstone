@@ -1,4 +1,3 @@
-
 /*----------general styles-----------*/
 html {
     overflow-x: hidden;
@@ -69,23 +68,13 @@ li{
     background-color: #555;
     color: white;
   }
-  
-
-
- /*---------end of navbar--------*/
 
   /*----------MAIN SECTION-----------*/
 
-  main {
-    /* background-image: url("./images/bg-img.jpg"); */
-  }
-
   .main-section {
-    /* background-image: url("./images/bg-img.jpg"); */
-      /* background: linear-gradient(#d3d3d3, #d5d5d5); */
       height: 100%;
       margin-top: -33px;
-      background: radial-gradient(#ec5242,#f1958b ) ;
+      background: radial-gradient(var(--second-color), var(--third-color) ) ;
       position: relative;
       padding-top: -4rem;
   }
@@ -97,23 +86,19 @@ li{
   }
 
   .main-text {
-      /* justify-content: center;
-      align-items: center; */
       align-content: center;
       padding-top: 8vh;
-      /* padding-left: 30vw; */
       font-size: x-large;
-      margin-bottom: 2rem;
+      margin-bottom: 5.5rem;
       margin-top: 2rem;
-      /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
-      color: #d3d3d3;
-      /* text-shadow: 2px 2px 4px #000000; */
+      color: var(--third-color);
+      text-shadow: 2px 2px 4px #000000;
       animation: mymove 2s infinite;
-      /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
-      font-family: my-cocofont;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      /* font-family: my-cocofont; */
   }
   @keyframes mymove {
-    50% {text-shadow: 10px 20px 30px blue;}
+    50% {text-shadow: 10px 20px 30px var(--first-color);}
   }
 
   .conf-date{
@@ -126,15 +111,15 @@ li{
       font-family: 'Lato', sans-serif;
       border: 2px solid darkslategrey;
       width: 20rem;
-      background-color: #d3d3d3;
+      background-color: var(--third-color);
       border-radius: 1rem;
-      box-shadow: #272a31;
+      box-shadow: 15px 5px var(--first-color);
   }
 
   .when p {
       font-size: small;
       margin-top: 1rem;
-      color: #ec5242;
+      color: var(--second-color);
       font-weight: 900;
       font-family: Georgia, 'Times New Roman', Times, serif;
   }
@@ -145,14 +130,15 @@ li{
 
   .submission-text {
       text-align: center;
-      background-color: #272a31;
+      background-color: var(--first-color);
       width: 50%;
       margin-left: 17rem;
       border-radius: 5px;
       margin-top: 1rem;
       letter-spacing: 2px;
       word-spacing: 25px;
-      color: aliceblue;
+      color: var(--third-color);
+      font-family: 'Lato', sans-serif;
   }
 
   .submission {
@@ -168,17 +154,17 @@ li{
   }
 
   .submission-button button {
-    background-color: #d3d3d3;
-    color: #272a31;
+    background-color: var(--third-color);
+    color: var(--second-color);
     border-radius: 10px;
   }
 
   .submission-button button:hover { 
-      background-color: #272a31;
+      background-color: var(--first-color);
   }
 
   .main-program-container {
-      background-color: #d3d3d3;
+      background-color: var(--third-color);
       padding: 1rem 0;
   }
 
@@ -194,8 +180,8 @@ li{
   .slides {
 width: 10rem;
 height: 15rem;
-background-color: #272a31;
-border:0.5px solid #d3d3d3;
+background-color: var(--first-color);
+border:0.5px solid var(--third-color);
 margin-left: 1px;
 justify-content: center;
 flex-direction: column;
@@ -214,7 +200,7 @@ height: 50px;
   }
 
   .slides h4{
-      color: #ec5242;
+      color: var(--second-color);
       text-align: center;
       font-size: large;
   }
@@ -222,7 +208,7 @@ height: 50px;
 
 
   .slides p {
-    color: antiquewhite;
+    color: var(--third-color);
     text-align: center;
     font-size: small;
     margin: 0 2px;
@@ -230,39 +216,43 @@ height: 50px;
 
   .entire-program-link {
       text-align: center;
-      color: black;
+      color: var(--first-color);
       margin-top: 1rem;
-      font-weight: 700;
+      font-weight: 900;
     font-size: large;
     text-decoration: underline;
+    font-family: 'Lato', sans-serif;
   }
 
   .entire-program-link p:hover{
-    color: #ec5242;
+    color: var(--second-color);
     font-weight: 700;
-    /* height: 190vh; */
   }
 
   .image-size {
       width: 145px;
       height: 145px;
+      cursor: pointer;
   }
 
   .card-font {
     font-size: 12px;
     font-family: 'Lato', sans-serif;
     line-height: 2;
+    cursor: pointer;
 }
 
   .underline-red {
-    color: #ec5242;
+    color: var(--second-color);
     font-size: 14px;
+    cursor: pointer;
   }
 
   .underline-red:hover {
     text-decoration: underline;
     text-decoration-color: red;
     font-size: 18px;
+    cursor: pointer;
   }
 
 
@@ -352,11 +342,11 @@ body {
     overflow-x: hidden;
 }
 
-    /* ul{
+    ul{
       flex-direction: column;
     }
 
-    nav{
+    /* nav{
         width: 100vw;
         background-color: #ec5242;
         height: 45vh;
