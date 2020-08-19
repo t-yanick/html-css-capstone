@@ -1,408 +1,411 @@
-/*----------general styles-----------*/
+/* ----------general styles----------- */
 html {
-
-    overflow-x: hidden;
-}  
-
-body{
-    margin: auto;
-    box-sizing: border-box;
-    background-image: url("./images/bg-img.jpg");
-    width: 100%;
-    font-family: 'Lato', sans-serif;
-  }
-
-  :root {
-    --first-color: #272A31;
-    --second-color: #EC5242;
-    --third-color: #D3D3D3;
+  overflow-x: hidden;
 }
 
-li{
-    list-style-type: none;
-    margin: 2vw 0;
-    font-size: 3vh;
-  }
-  
-  a{
-    text-decoration: none;
-    color: beige;
-    font-family: monospace;
-    padding: 2vw;
-  }
+body {
+  margin: auto;
+  box-sizing: border-box;
+  background-image: url("./images/bg-img.jpg");
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
 
-  .flex {
-      display: flex;
-  }
+:root {
+  --first-color: #272a31;
+  --second-color: #ec5242;
+  --third-color: #d3d3d3;
+}
 
-  @import url(//db.onlinewebfonts.com/c/4d309d1a449d052dcbc2f893306274fd?family=COCOGOOSE+LETTERPRESS);
+li {
+  list-style-type: none;
+  margin: 2vw 0;
+  font-size: 3vh;
+}
 
-  @font-face {
-    font-family: "COCOGOOSE LETTERPRESS"; 
-    src: url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.eot"); 
-    src: url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.woff") format("woff"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.svg#COCOGOOSE LETTERPRESS") format("svg"); } 
-  
-/*----------Navbar-----------*/
+a {
+  text-decoration: none;
+  color: beige;
+  font-family: monospace;
+  padding: 2vw;
+}
+
+.flex {
+  display: flex;
+}
+
+@import url(//db.onlinewebfonts.com/c/4d309d1a449d052dcbc2f893306274fd?family=COCOGOOSE+LETTERPRESS);
+
+@font-face {
+  font-family: "COCOGOOSE LETTERPRESS";
+  src: url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.eot");
+  src: url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.woff") format("woff"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.svg#COCOGOOSE LETTERPRESS") format("svg");
+}
+
+/* ----------Navbar----------- */
 
 .topnav {
-    background-color: var(--first-color);
-    overflow: hidden;
-  }
- 
-  .topnav a {
-    float: left;
-    display: block;
-    color: var(--third-color);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
- 
-  .active {
-    background-color: var(--second-color);
-    color: var(--third-color);
-    
-  }
- 
-  .topnav .icon {
-    display: none;
-  }
-  
-  .topnav a:hover{
-    background-color: #555;
-    color: white;
-  }
+  background-color: var(--first-color);
+  overflow: hidden;
+}
 
-  /*----------MAIN SECTION-----------*/
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--third-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
+.active {
+  background-color: var(--second-color);
+  color: var(--third-color);
+}
 
-  .main-section-container {
-      height: 100%;
-      margin-top: -33px;
-      position: relative;
-      padding-top: -4rem;
-  }
+.topnav .icon {
+  display: none;
+}
 
+.footer-container ul li a {
+  color: black !important;
+}
 
+.topnav a:hover {
+  background-color: #555;
+  color: white;
+}
 
-  h1, h3, h5 {
-    text-align: center;
-  }
+/* ----------MAIN SECTION----------- */
 
-  .main-text {
-      align-content: center;
-      padding-top: 8vh;
-      font-size: x-large;
-      margin-bottom: 1rem;
-      margin-top: 1rem;
-      color: var(--first-color);
-      animation: mymove 2s infinite;
-      font-family: "COCOGOOSE LETTERPRESS"; 
-  }
+.main-section-container {
+  height: 100%;
+  margin-top: -33px;
+  position: relative;
+  padding-top: -4rem;
+}
 
-  @keyframes mymove {
-    50% {text-shadow: 10px 20px 30px var(--second-color);}
-  }
+h1,
+h3,
+h5 {
+  text-align: center;
+}
 
-  .year {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 6rem;
+.main-text {
+  align-content: center;
+  padding-top: 8vh;
+  font-size: x-large;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: var(--first-color);
+  animation: mymove 2s infinite;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "COCOGOOSE LETTERPRESS";
+}
+
+@keyframes mymove {
+  50% { text-shadow: 10px 20px 30px var(--second-color); }
+}
+
+.year {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 6rem;
 }
 
 .about-text {
-    width: 60%;
-    height: 40%;
-    background-color: var(--third-color);
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-    text-align: center;
-    color: var(--first-color);
-    border-radius: 5px;
-    padding: 1rem;
-    box-shadow: 10px 10px var(--second-color);
-    font-weight: 900;
-    font-size: 1.3rem;
+  width: 60%;
+  height: 40%;
+  background-color: var(--third-color);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  text-align: center;
+  color: var(--first-color);
+  border-radius: 5px;
+  padding: 1rem;
+  box-shadow: 10px 10px var(--second-color);
+  font-weight: 900;
+  font-size: 1.3rem;
 }
 
 .about-text p .text-bg {
-    background-color: var(--second-color);
-    cursor: pointer;
+  background-color: var(--second-color);
+  cursor: pointer;
 }
 
-
 .mailing-list {
-    text-align: center;
-    width: 90%;
-    margin: 3rem auto 2rem auto;
-
+  text-align: center;
+  width: 90%;
+  margin: 3rem auto 2rem auto;
 }
 
 .mailing-list p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .subscribe {
-    flex-direction: column;
-    width: 85%;
-    margin: 0 auto;
+  flex-direction: column;
+  width: 85%;
+  margin: 0 auto;
 }
 
 #email {
-    padding: 1rem 0;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
-    font-size: 30px;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  font-size: 30px;
 }
 
 .subscribe-btn {
-    padding: 0.5rem 0;
-    margin-bottom: 1rem;
-    display: inline-block;
-font-size: 24px;
-cursor: pointer;
-text-align: center;
-text-decoration: none;
-outline: none;
-color: white;
-background-color: var(--second-color);
-border: none;
-border-radius: 15px;
-box-shadow: 0 10px var(--first-color);
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  display: inline-block;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: var(--second-color);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px var(--first-color);
 }
 
-.subscribe-btn:hover {background-color: coral}
+.subscribe-btn:hover { background-color: coral; }
+
 .subscribe-btn:active {
-background-color: var(--second-color);
-box-shadow: 0 5px var(--first-color);
-transform: translateY(4px);
+  background-color: var(--second-color);
+  box-shadow: 0 5px var(--first-color);
+  transform: translateY(4px);
 }
 
 .twitter-follow {
-    padding-bottom: 1rem;
-    margin-left: 25rem;
+  padding-bottom: 1rem;
+  margin-left: 25rem;
 }
 
 .twitter-follow span {
-    color: var(--second-color);
-    text-decoration: underline;
-    cursor: pointer;
+  color: var(--second-color);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .past-congress {
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    padding-bottom: 0.5rem;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
 }
 
 .past-congress-text {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .past-congress-text h3 {
-    color: var(--second-color);
-    font-weight: 900;
+  color: var(--second-color);
+  font-weight: 900;
 }
 
 .past-congress-text p {
-    color: var(--first-color);
-    font-weight: 900;
-    text-align: center;
-    font-size: 2rem;
+  color: var(--first-color);
+  font-weight: 900;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .buea-2014 {
-    background-image: url(../images/buea-2014.jpg);
-    background-image: url(../images/buea-2014.jpg), linear-gradient(black, gray);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 25rem;
-    height: 20rem;
-    cursor: pointer;
-    margin-right: 1rem;
-    border-radius: 2rem;
+  background-image: url(../images/buea-2014.jpg);
+  background-image: url(../images/buea-2014.jpg), linear-gradient(black, gray);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25rem;
+  height: 20rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  border-radius: 2rem;
 }
 
 .douala-2017 {
-    background-image: url(../images/douala-2017.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 25rem;
-    height: 20rem;
-    cursor: pointer;
-    border-radius: 2rem;
+  background-image: url(../images/douala-2017.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25rem;
+  height: 20rem;
+  cursor: pointer;
+  border-radius: 2rem;
 }
 
 .buea-2014 h1 {
-    margin-top: 7rem;
-    color: var(--second-color);
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.buea-2014 h1:hover {
-    text-decoration: underline;
-    color:rgb(7, 241, 7);
-}
-
-.buea-2014 h3 {
-    color: var(--second-color);
-}
-
-.buea-2014 h3:hover {
-    text-decoration: underline;
-    color:rgb(7, 241, 7);
+  margin-top: 7rem;
+  color: var(--second-color);
+  font-size: 3rem;
+  font-weight: bold;
 }
 
 .douala-2017 h1 {
-    margin-top: 7rem;
-    color: var(--second-color);
-    font-size: 3rem;
-    font-weight: bold;  
+  margin-top: 7rem;
+  color: var(--second-color);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.buea-2014 h1:hover {
+  text-decoration: underline;
+  color: rgb(7, 241, 7);
+}
+
+.buea-2014 h3 {
+  color: var(--second-color);
+}
+
+.douala-2017 h3 {
+  color: var(--second-color);
+}
+
+.buea-2014 h3:hover {
+  text-decoration: underline;
+  color: rgb(7, 241, 7);
 }
 
 .douala-2017 h1:hover {
-    text-decoration: underline;
-    color:rgb(7, 241, 7);
-}
-.douala-2017 h3 {
-    color: var(--second-color);
+  text-decoration: underline;
+  color: rgb(7, 241, 7);
 }
 
 .douala-2017 h3:hover {
-    text-decoration: underline;
-    color:rgb(7, 241, 7);
+  text-decoration: underline;
+  color: rgb(7, 241, 7);
 }
 
-  .conf-date{
-      justify-content: space-around;
-      margin-top: 2rem;
-  }
-
-  .footer-container {
-      height: 12rem;
-      width: 100%;
-      height: 100%;
-      background-color: var(--third-color);
-      text-align: center;
-      padding-top: 2rem;
-  }
-
-  .footer-container ul{
-      padding-bottom: 1rem;
-      justify-content: center;
-  }
-
-  .footer-container ul li{
-    margin-right: 0.5rem;
+.conf-date {
+  justify-content: space-around;
+  margin-top: 2rem;
 }
 
-.footer-container ul li a{
-    color: black !important;
+.footer-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--third-color);
+  text-align: center;
+  padding-top: 2rem;
 }
 
-.footer-container ul li a:hover{
-    color: var(--second-color) !important;
+.footer-container ul {
+  padding-bottom: 1rem;
+  justify-content: center;
 }
 
-/*----------MEDIA QUERIES-----------*/
+.footer-container ul li {
+  margin-right: 0.5rem;
+}
+
+.footer-container ul li a:hover {
+  color: var(--second-color) !important;
+}
+
+/* ----------MEDIA QUERIES----------- */
 
 @media screen and (max-width: 767px) {
-    .topnav a:not(:first-child), .dropdown .dropbtn {
-      display: none;
-    }
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
   }
 
-@media screen and (max-width: 767px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .topnav.responsive .dropdown {float: none;}
-    .topnav.responsive .dropdown-content {position: relative;}
-    .topnav.responsive .dropdown .dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  } 
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
 
-  @media only screen and (max-width: 767px) {
-body {
+@media screen and (max-width: 767px) {
+  .topnav.responsive { position: relative; }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown { float: none; }
+  .topnav.responsive .dropdown-content { position: relative; }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
     overflow-x: hidden;
-}
+  }
 
-    ul{
-      flex-direction: column;
-    }
+  ul {
+    flex-direction: column;
+  }
 
-    nav{
-        width: 100vw;
-        background-color: var(--second-color)
-      }
+  nav {
+    width: 100vw;
+    background-color: var(--second-color);
+  }
 
-      main {
-          width: 100%;
-      }
-    
-    a{
-      display: block;
-    }
-    
-    li{
-      margin: 0;
-    }
+  main {
+    width: 100%;
+  }
 
-    .about-text {
-        margin-left: 3.5rem;
-        width: 24rem;
-    }
+  a {
+    display: block;
+  }
 
-    .mailing-list {
-        margin-left: 0.5rem;
-        margin-top: 1rem;
-        width: 95%;
-    }
-    
-.subscribe {
+  li {
+    margin: 0;
+  }
+
+  .about-text {
+    margin-left: 3.5rem;
+    width: 24rem;
+  }
+
+  .mailing-list {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 95%;
+  }
+
+  .subscribe {
     width: 90%;
     margin-left: 1.5rem;
-}
-
-    .twitter-follow {
-        padding-bottom: 1rem;
-        margin-left: 1.5rem;
-        width: 90%;
-    }
-
-   .past-congress {
-       flex-direction: column;
-   }
-
-   .buea-2014 {
-       margin-bottom: 1rem;
-   }
-
-      .partner-logo{
-        flex-direction: row;
-        margin-left: 6rem;
-        width: 40px;
-        height: 40px;
-        margin-top: 0.5rem;
-        justify-content: center;
-    }
   }
+
+  .twitter-follow {
+    padding-bottom: 1rem;
+    margin-left: 1.5rem;
+    width: 90%;
+  }
+
+  .past-congress {
+    flex-direction: column;
+  }
+
+  .buea-2014 {
+    margin-bottom: 1rem;
+  }
+
+  .partner-logo {
+    flex-direction: row;
+    margin-left: 6rem;
+    width: 40px;
+    height: 40px;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+}
