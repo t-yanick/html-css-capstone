@@ -10,8 +10,7 @@
     <link href="//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE" rel="stylesheet"
         type="text/css" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
-    <script src="jquery-3.4.0.min.js"></script>
-    <script src="scripts/navbar.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
@@ -19,36 +18,16 @@
 
     <header>
         <nav>
-            <ul>
-                <button>🞬</button>
-                <li>
-                    <img class="logo" src="../images/logo.png" alt="logo">
-                </li>
-                <li class="link-animation">
-                    <!-- link one -->
-                    <a href="#about"> About </a>
-                </li>
-                <li>
-                    <!-- link two -->
-                    <a href="tickets.html"> Tickets </a>
-                </li>
-                <li>
-                    <!-- link three -->
-                    <a href="./pages/"> Organizers</a>
-                </li>
-                <li>
-                    <!-- link four -->
-                    <a href="./pages/"> Conference Agenda </a>
-                </li>
-                <li>
-                    <!-- link four -->
-                    <a href="./pages/"> Keynote Speakers </a>
-                </li>
-                <li>
-                    <!-- link four -->
-                    <a href="./pages/"> Partners </a>
-                </li>
-            </ul>
+            <div class="topnav" id="myTopnav">
+                <a href="#index.html" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="tickets.html">Tickets</a>
+                <a href="#partners">Partners</a>
+                <a href="#partners">Keynote Speakers</a>
+                <a href="#conference-agenda">Conference Agenda</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
         </nav>
     </header>
 
@@ -64,11 +43,13 @@
                 </p>
                 <p>Every presenter has been hand-picked and each topic is selected to complement or build on the
                     others.</p>
-                <p>Best yet, every presentation is recorded and published to <a href="#">CTCSessions</a> after the event
+                <p>Best yet, every presentation is recorded and published to <span class="text-bg"><a
+                            href="#">CTCSessions</a> </span> after the event
                     has ended.
                     This means you can watch everything no matter when you're available.</p>
-                <p>Cameroonian Technology Congress 2020 will be on a screen near from September 2nd, 2020 , kicking off
-                    at 4:00am.</p>
+                <p>Cameroonian Technology Congress 2020 will be on a screen near from <span class="text-bg">September
+                        2nd, 2020 , kicking off
+                        at 4:00am.</span></p>
             </div>
 
             <div>
@@ -122,24 +103,16 @@
             </div>
         </div>
     </footer>
-
-</body>
-
-<!-- <script src="jquery-3.4.0.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-
-        $("button").click(function () {
-
-            if ($("button").text() == "☰") {
-                $("button").text("🞬");
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
             } else {
-                $("button").text("☰");
+                x.className = "topnav";
             }
-
-            $("li").toggle("slow");
-        });
-    });
-</script> -->
+        }
+    </script>
+</body>
 
 </html>

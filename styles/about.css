@@ -12,6 +12,12 @@ body{
     width: 100%;
   }
 
+  :root {
+    --first-color: #272A31;
+    --second-color: #EC5242;
+    --third-color: #D3D3D3;
+}
+
 li{
     list-style-type: none;
     margin: 2vw 0;
@@ -22,7 +28,6 @@ li{
     text-decoration: none;
     color: beige;
     font-family: monospace;
-  margin-top: 1rem;
     padding: 2vw;
   }
 
@@ -37,53 +42,45 @@ li{
   
 /*----------Navbar-----------*/
 
-  nav{
-    width: 100vw;  
-    /* background-color: #ec5242; */
-    background-color:  #272a31;
-    height: 11.3vh;
-    /* position: fixed; */
-    /* z-index: 99; */
+
+.topnav {
+    background-color: var(--first-color);
+    overflow: hidden;
   }
-  
-  ul{
+ 
+  .topnav a {
+    float: left;
     display: block;
-    margin: 0;
-    padding: 0;
+    color: var(--third-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+ 
+  .active {
+    background-color: var(--second-color);
+    color: var(--third-color);
     
-    display: flex;  
   }
-
-   .logo {
-
-    width: 10vw;
-    height: 11.4vh;
-    position: relative;
-    margin-left: 0;
-    margin-top: -27px;
-  }
-
-  
-  ul button{
+ 
+  .topnav .icon {
     display: none;
   }
   
-  a:hover{
-    background: radial-gradient(#ec5242,#f1958b ) ;
-    color: black; 
-  
+  .topnav a:hover{
+    background-color: #555;
+    color: white;
   }
+
+ /*---------end of navbar--------*/
 
   /*----------MAIN SECTION-----------*/
 
 
   .main-section-container {
-    /* background-image: url("./images/bg-img.jpg"); */
-      /* background: linear-gradient(#d3d3d3, #d5d5d5); */
       height: 100%;
       margin-top: -33px;
-      /* background: radial-gradient(#ec5242,#f1958b ) ; */
-      background: linear-gradient(#d3d3d3,#8f8483 ) ; 
       position: relative;
       padding-top: -4rem;
   }
@@ -95,41 +92,37 @@ li{
   }
 
   .main-text {
-      /* justify-content: center;
-      align-items: center; */
       align-content: center;
       padding-top: 8vh;
-      /* padding-left: 30vw; */
       font-size: x-large;
       margin-bottom: 2rem;
       margin-top: 2rem;
-      /* text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; */
       color: #d3d3d3;
-      /* text-shadow: 2px 2px 4px #000000; */
       animation: mymove 2s infinite;
-      /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
       font-family: my-cocofont;
   }
   @keyframes mymove {
     50% {text-shadow: 10px 20px 30px blue;}
   }
 
-  /* @keyframes mymove {
-    50% {text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;}
-  } */
-
-
 .about-text {
-    width: 50%;
+    width: 60%;
     height: 40%;
-    /* background-color: #d3d3d3; */
-    background-color: #272a31;
-    margin-left: 20rem;
+    background-color: var(--third-color);
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 4rem;
+    margin-bottom: 2rem;
     text-align: center;
-    color: greenyellow;
+    color: var(--first-color);
     border-radius: 5px;
     padding: 1rem;
+    box-shadow: 10px 10px var(--second-color);
+}
+
+.about-text p .text-bg {
+    background-color: var(--second-color);
+    cursor: pointer;
 }
 
 
@@ -155,23 +148,22 @@ li{
     padding: 0.5rem 0;
     margin-bottom: 1rem;
     display: inline-block;
-/* padding: 15px 25px; */
 font-size: 24px;
 cursor: pointer;
 text-align: center;
 text-decoration: none;
 outline: none;
 color: white;
-background-color: CORAL;
+background-color: var(--second-color);
 border: none;
 border-radius: 15px;
-box-shadow: 0 10px #999;
+box-shadow: 0 10px var(--first-color);
 }
 
 .subscribe-btn:hover {background-color: coral}
 .subscribe-btn:active {
-background-color: coral;
-box-shadow: 0 5px #666;
+background-color: var(--second-color);
+box-shadow: 0 5px var(--first-color);
 transform: translateY(4px);
 }
 
@@ -181,7 +173,7 @@ transform: translateY(4px);
 }
 
 .twitter-follow span {
-    color: #ec5242;
+    color: var(--second-color);
     text-decoration: underline;
     cursor: pointer;
 }
@@ -198,18 +190,19 @@ transform: translateY(4px);
 }
 
 .past-congress-text h3 {
-    color: #ec5242;
+    color: var(--second-color);
     font-weight: 900;
 }
 
 .past-congress-text p {
-    color: #272a31;
+    color: var(--first-color);
     font-weight: 500;
     text-align: center;
 }
 
 .buea-2014 {
     background-image: url(../images/buea-2014.jpg);
+    background-image: url(../images/buea-2014.jpg), linear-gradient(black, gray);
     background-repeat: no-repeat;
     background-size: cover;
     width: 25rem;
@@ -231,7 +224,7 @@ transform: translateY(4px);
 
 .buea-2014 h1 {
     margin-top: 7rem;
-    color: red;
+    color: var(--second-color);
 }
 
 .buea-2014 h1:hover {
@@ -240,7 +233,7 @@ transform: translateY(4px);
 }
 
 .buea-2014 h3 {
-    color: red;
+    color: var(--second-color);
 }
 
 .buea-2014 h3:hover {
@@ -250,7 +243,7 @@ transform: translateY(4px);
 
 .douala-2017 h1 {
     margin-top: 7rem;
-    color: red;
+    color: var(--second-color);
 }
 
 .douala-2017 h1:hover {
@@ -258,7 +251,7 @@ transform: translateY(4px);
     color:rgb(7, 241, 7);
 }
 .douala-2017 h3 {
-    color: red;
+    color: var(--second-color);
 }
 
 .douala-2017 h3:hover {
@@ -271,37 +264,11 @@ transform: translateY(4px);
       margin-top: 2rem;
   }
 
-  
-
-
-
-  .partners-container{
-      height: 20rem;
-      width: 100%;
-      background-color: #272a31;
-  }
-
-  .partners-title {
-      color: #ec5242;
-      text-align: center;
-      margin-top: 1rem;
-      padding-top: 1rem;
-  }
-
-.partner-logo {
-    width: 120px;
-    height: 100px;
-    justify-content: space-evenly;
-    width: 70%;
-    margin-left: 7rem;
-    margin-top: 2rem;
-}
-
   .footer-container {
       height: 12rem;
       width: 100%;
       height: 100%;
-      background-color: #d3d3d3;
+      background-color: var(--third-color);
       text-align: center;
       padding-top: 2rem;
   }
@@ -320,10 +287,40 @@ transform: translateY(4px);
 }
 /*----------MEDIA QUERIES-----------*/
 
+@media screen and (max-width: 767px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+@media screen and (max-width: 767px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  } 
+
   @media only screen and (max-width: 767px) {
 body {
     overflow-x: hidden;
-    /* width: 100%; */
 }
 
     ul{
@@ -332,8 +329,7 @@ body {
 
     nav{
         width: 100vw;
-        background-color: #ec5242;
-        height: 45vh;
+        background-color: var(--second-color)
       }
 
       main {
@@ -342,10 +338,6 @@ body {
     
     a{
       display: block;
-    }
-
-    .logo {
-        display: none;
     }
     
     li{
