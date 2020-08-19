@@ -21,7 +21,7 @@ Building a technology conference website using HTML/CSS and Bootstrap.
 [Click here for Live Demo](https://raw.githack.com/t-yanick/html-css-capstone/workplace/index.html)
 
 # Video Presentation 
-[Click here](https://raw.githack.com/t-yanick/html-css-capstone/workplace/index.html) to watch a 5 minutes presentation of the project.
+[Click here](https://www.loom.com/share/0e00b465c5ca42dab364f135c357f763) to watch a 5 minutes presentation of the project.
 
 # Getting Started
 
