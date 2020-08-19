@@ -101,7 +101,7 @@ h5 {
   color: var(--third-color);
   animation: mymove 5s infinite;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-family: "COCOGOOSE LETTERPRESS";
+  font-family: "COCOGOOSE LETTERPRESS", sans-serif;
 }
 
 @keyframes mymove {

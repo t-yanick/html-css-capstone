@@ -101,7 +101,7 @@ h5 {
   color: var(--first-color);
   animation: mymove 2s infinite;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-family: "COCOGOOSE LETTERPRESS";
+  font-family: "COCOGOOSE LETTERPRESS", sans-serif;
 }
 
 @keyframes mymove {
