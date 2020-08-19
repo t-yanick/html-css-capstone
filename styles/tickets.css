@@ -1,4 +1,3 @@
-
 /*----------general styles-----------*/
 html {
 
@@ -10,6 +9,7 @@ body{
     box-sizing: border-box;
     background-image: url("./images/bg-img.jpg");
     width: 100%;
+    font-family: 'Lato', sans-serif;
   }
 
   :root {
@@ -71,11 +71,6 @@ li{
     background-color: #555;
     color: white;
   }
-  
-
-
- /*---------end of navbar--------*/
-
 
   /*----------MAIN SECTION-----------*/
 
@@ -197,6 +192,11 @@ th {
 .footer-container ul li a{
   color: var(--first-color) !important;
 }
+
+.footer-container ul li a:hover{
+    color: var(--second-color) !important;
+}
+
 /*----------MEDIA QUERIES-----------*/
 
 @media screen and (max-width: 767px) {

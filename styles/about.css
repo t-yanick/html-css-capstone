@@ -1,4 +1,3 @@
-
 /*----------general styles-----------*/
 html {
 
@@ -10,6 +9,7 @@ body{
     box-sizing: border-box;
     background-image: url("./images/bg-img.jpg");
     width: 100%;
+    font-family: 'Lato', sans-serif;
   }
 
   :root {
@@ -35,13 +35,14 @@ li{
       display: flex;
   }
 
+  @import url(//db.onlinewebfonts.com/c/4d309d1a449d052dcbc2f893306274fd?family=COCOGOOSE+LETTERPRESS);
+
   @font-face {
-      font-family: my-cocofont;
-      src: url(COCOGOOSELETTERPRESS-TRIAL.ttf);
-  }
+    font-family: "COCOGOOSE LETTERPRESS"; 
+    src: url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.eot"); 
+    src: url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.woff") format("woff"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.svg#COCOGOOSE LETTERPRESS") format("svg"); } 
   
 /*----------Navbar-----------*/
-
 
 .topnav {
     background-color: var(--first-color);
@@ -73,8 +74,6 @@ li{
     color: white;
   }
 
- /*---------end of navbar--------*/
-
   /*----------MAIN SECTION-----------*/
 
 
@@ -95,15 +94,21 @@ li{
       align-content: center;
       padding-top: 8vh;
       font-size: x-large;
-      margin-bottom: 2rem;
-      margin-top: 2rem;
-      color: #d3d3d3;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      color: var(--first-color);
       animation: mymove 2s infinite;
-      font-family: my-cocofont;
+      font-family: "COCOGOOSE LETTERPRESS"; 
   }
+
   @keyframes mymove {
-    50% {text-shadow: 10px 20px 30px blue;}
+    50% {text-shadow: 10px 20px 30px var(--second-color);}
   }
+
+  .year {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 6rem;
+}
 
 .about-text {
     width: 60%;
@@ -111,13 +116,15 @@ li{
     background-color: var(--third-color);
     margin-left: auto;
     margin-right: auto;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
     text-align: center;
     color: var(--first-color);
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 10px 10px var(--second-color);
+    font-weight: 900;
+    font-size: 1.3rem;
 }
 
 .about-text p .text-bg {
@@ -128,20 +135,26 @@ li{
 
 .mailing-list {
     text-align: center;
-    margin-left: 7rem;
-    width: 80%;
+    width: 90%;
+    margin: 3rem auto 2rem auto;
+
+}
+
+.mailing-list p {
+    font-size: 1.5rem;
 }
 
 .subscribe {
     flex-direction: column;
-    width: 80%;
-    margin-left: 7rem;
+    width: 85%;
+    margin: 0 auto;
 }
 
 #email {
     padding: 1rem 0;
     margin-bottom: 1rem;
     border-radius: 1rem;
+    font-size: 30px;
 }
 
 .subscribe-btn {
@@ -196,8 +209,9 @@ transform: translateY(4px);
 
 .past-congress-text p {
     color: var(--first-color);
-    font-weight: 500;
+    font-weight: 900;
     text-align: center;
+    font-size: 2rem;
 }
 
 .buea-2014 {
@@ -225,6 +239,8 @@ transform: translateY(4px);
 .buea-2014 h1 {
     margin-top: 7rem;
     color: var(--second-color);
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .buea-2014 h1:hover {
@@ -244,6 +260,8 @@ transform: translateY(4px);
 .douala-2017 h1 {
     margin-top: 7rem;
     color: var(--second-color);
+    font-size: 3rem;
+    font-weight: bold;  
 }
 
 .douala-2017 h1:hover {
@@ -285,6 +303,11 @@ transform: translateY(4px);
 .footer-container ul li a{
     color: black !important;
 }
+
+.footer-container ul li a:hover{
+    color: var(--second-color) !important;
+}
+
 /*----------MEDIA QUERIES-----------*/
 
 @media screen and (max-width: 767px) {

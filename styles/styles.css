@@ -7,7 +7,10 @@ body{
     margin: auto;
     box-sizing: border-box;
     width: 100%;
+    font-family: 'Lato', sans-serif;
   }
+
+  @import url(//db.onlinewebfonts.com/c/4d309d1a449d052dcbc2f893306274fd?family=COCOGOOSE+LETTERPRESS);
 
   :root {
     --first-color: #272A31;
@@ -33,9 +36,9 @@ li{
   }
 
   @font-face {
-      font-family: my-cocofont;
-      src: url(COCOGOOSELETTERPRESS-TRIAL.ttf);
-  }
+      font-family: "COCOGOOSE LETTERPRESS"; 
+      src: url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.eot"); 
+      src: url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.woff") format("woff"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4d309d1a449d052dcbc2f893306274fd.svg#COCOGOOSE LETTERPRESS") format("svg"); } 
   
 /*----------Navbar-----------*/
 
@@ -88,17 +91,21 @@ li{
   .main-text {
       align-content: center;
       padding-top: 8vh;
-      font-size: x-large;
-      margin-bottom: 5.5rem;
+      font-size: 5rem;
+      margin-bottom: 0.5rem;
       margin-top: 2rem;
       color: var(--third-color);
-      text-shadow: 2px 2px 4px #000000;
-      animation: mymove 2s infinite;
+      animation: mymove 5s infinite;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      /* font-family: my-cocofont; */
+      font-family: "COCOGOOSE LETTERPRESS"; 
   }
   @keyframes mymove {
-    50% {text-shadow: 10px 20px 30px var(--first-color);}
+    50% {text-shadow: 10px 20px 10px  var(--first-color);}
+  }
+
+  .year {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 7rem;
   }
 
   .conf-date{
@@ -260,11 +267,11 @@ height: 50px;
   .partners-container{
       height: 20rem;
       width: 100%;
-      background-color: #272a31;
+      background-color: var(--first-color);
   }
 
   .partners-title {
-      color: #ec5242;
+      color: var(--second-color);
       text-align: center;
       margin-top: 1rem;
       padding-top: 1rem;
@@ -283,7 +290,7 @@ height: 50px;
       height: 10rem;
       width: 100%;
       height: 100%;
-      background-color: #d3d3d3;
+      background-color: var(--third-color);
       text-align: center;
       padding-top: 2rem;
   }
@@ -300,6 +307,10 @@ height: 50px;
   .footer-container ul li a{
       color: black !important;
   }
+
+  .footer-container ul li a:hover{
+    color: var(--second-color) !important;
+}
   
 /*----------MEDIA QUERIES-----------*/
 
@@ -314,7 +325,6 @@ height: 50px;
     }
   }
 
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 767px) {
     .topnav.responsive {position: relative;}
     .topnav.responsive a.icon {
@@ -345,12 +355,6 @@ body {
     ul{
       flex-direction: column;
     }
-
-    /* nav{
-        width: 100vw;
-        background-color: #ec5242;
-        height: 45vh;
-      } */
 
       main {
           width: 100%;
