@@ -18,12 +18,15 @@ Building a technology conference website using HTML/CSS and Bootstrap.
 </p>
 
 # Live Demo
-[Click here for Live Demo](https://raw.githack.com/t-yanick/using-bootstrap/practice/index.html)
+[Click here for Live Demo](https://raw.githack.com/t-yanick/html-css-capstone/workplace/index.html)
+
+# Video Presentation 
+[Click here](https://raw.githack.com/t-yanick/html-css-capstone/workplace/index.html) to watch a 5 minutes presentation of the project.
 
 # Getting Started
 
 The repository for this project is open source and open for contributions. 
-When you visit the [issues page](https://github.com/t-yanick/using-bootstrap/issues), click on code and you will find clone to the right of the page. You can either Download or copy the link and do a "git clone repository-link" in the terminal.
+When you visit the [issues page](https://github.com/t-yanick/html-css-capstone/issues), click on code and you will find clone to the right of the page. You can either Download or copy the link and do a "git clone repository-link" in the terminal.
 You will now have my project in your local machine and you are ready to start working on it.
 
 # Author
@@ -36,7 +39,7 @@ You will now have my project in your local machine and you are ready to start wo
 
 # Contributing
 Contributions, issues and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/t-yanick/using-bootstrap/issues).
+Feel free to check the [issues page](https://github.com/t-yanick/html-css-capstone/issues).
 
 # Show your support
 If you like our work, please give us a :+1:
@@ -46,7 +49,7 @@ If you like our work, please give us a :+1:
 - W3schools
 - Freecodecamp
 - Developer.mozilla
-- Learnshayhowe
+- Onlinewebfonts
 - Odin project
 - Hackerthemes
 - Getbootstrap
