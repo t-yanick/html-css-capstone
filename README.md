@@ -25,9 +25,11 @@ Building a technology conference website using HTML/CSS and Bootstrap.
 
 # Getting Started
 
-The repository for this project is open source and open for contributions. 
-When you visit the [issues page](https://github.com/t-yanick/html-css-capstone/issues), click on code and you will find clone to the right of the page. You can either Download or copy the link and do a "git clone repository-link" in the terminal.
-You will now have my project in your local machine and you are ready to start working on it.
+- The repository for this project is open source and open for contributions. 
+- When you visit the [issues page](https://github.com/t-yanick/html-css-capstone/issues) 
+- Click on code and you will find clone to the right of the page. 
+- You can either Download or copy the link and do a "git clone repository-link" in the terminal.
+- You will now have my project in your local machine and you are ready to start working on it.
 
 # Author
 

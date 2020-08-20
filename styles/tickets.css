@@ -26,7 +26,6 @@ li {
 a {
   text-decoration: none;
   color: beige;
-  font-family: monospace;
   padding: 2vw;
 }
 
@@ -34,10 +33,6 @@ a {
   display: flex;
 }
 
-@font-face {
-  font-family: my-cocofont;
-  src: url(COCOGOOSELETTERPRESS-TRIAL.ttf);
-}
 
 /* ----------Navbar----------- */
 
@@ -105,9 +100,7 @@ div h3 {
   width: 40%;
   justify-content: center;
   border: 2px solid var(--third-color);
-  margin-bottom: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 2rem auto;
   padding-top: 0.5rem;
   border-radius: 2rem;
 }
@@ -122,8 +115,7 @@ div h3 {
 
 table {
   border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-bottom: 2rem;
   outline-style: dotted;
   outline-color: var(--second-color);
@@ -165,11 +157,9 @@ th {
 }
 
 .submit-button {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 2rem auto 0 auto;
   width: 20rem;
   text-align: center;
-  margin-top: 2rem;
   padding: 0.5rem 0;
   background-color: var(--second-color);
   border-radius: 2rem;
