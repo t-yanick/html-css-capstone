@@ -140,9 +140,8 @@ h5 {
   text-align: center;
   background-color: var(--first-color);
   width: 50%;
-  margin-left: 17rem;
+  margin: 2rem auto;
   border-radius: 5px;
-  margin-top: 1rem;
   letter-spacing: 2px;
   word-spacing: 25px;
   color: var(--third-color);
@@ -156,13 +155,8 @@ h5 {
   margin: 0 auto;
 }
 
-.submission-text {
-    margin: 2rem auto;
-
-}
-
 .submission-button {
-    margin: 0 auto;
+  margin: 0 auto;
   padding: 10px;
 }
 
@@ -187,7 +181,7 @@ h5 {
 }
 
 .main-program {
-    /* margin: 0 auto; */
+  /* margin: 0 auto; */
   margin-left: 230px;
 }
 
@@ -200,7 +194,6 @@ h5 {
   justify-content: center;
   flex-direction: column;
 }
-
 
 .slides img {
   margin-left: 3.5rem;
