@@ -357,6 +357,7 @@ h5 {
     background-color: var(--first-color);
     overflow: hidden;
     height: auto;
+    padding-right: 0;
   }
 }
 
@@ -374,8 +375,8 @@ h5 {
   }
 
   .conf-date {
+    justify-content: center;
     flex-direction: column;
-    margin-left: 13rem;
     align-content: space-evenly;
     align-items: center;
   }

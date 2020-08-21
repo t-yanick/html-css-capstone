@@ -235,6 +235,7 @@ th {
     background-color: var(--first-color);
     overflow: hidden;
     height: auto;
+    padding-right: 0;
   }
 }
 
