@@ -38,6 +38,9 @@ a {
 .topnav {
   background-color: var(--first-color);
   overflow: hidden;
+  padding-right: 10rem;
+  height: 4rem; 
+  justify-content: flex-end;
 }
 
 .topnav a {
@@ -50,9 +53,13 @@ a {
   font-size: 17px;
 }
 
-.active {
-  background-color: var(--second-color);
-  color: var(--third-color);
+.logo-cont {
+  margin-right: 3rem;
+}
+
+.logo {
+    height: 4rem;
+    width: 4rem;
 }
 
 .topnav .icon {
@@ -222,6 +229,12 @@ th {
     display: block;
     width: 100%;
     text-align: left;
+  }
+
+  .topnav {
+    background-color: var(--first-color);
+    overflow: hidden;
+    height: auto;
   }
 }
 

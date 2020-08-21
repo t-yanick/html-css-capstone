@@ -45,11 +45,15 @@ a {
 .topnav {
   background-color: var(--first-color);
   overflow: hidden;
+  padding-right: 10rem;
+  height: 4rem; 
+  justify-content: flex-end;
 }
 
 .topnav a {
   float: left;
   display: block;
+  justify-content: right;
   color: var(--third-color);
   text-align: center;
   padding: 14px 16px;
@@ -57,9 +61,13 @@ a {
   font-size: 17px;
 }
 
-.active {
-  background-color: var(--second-color);
-  color: var(--third-color);
+.logo-cont {
+  margin-right: 3rem;
+}
+
+.logo {
+    height: 4rem;
+    width: 4rem;
 }
 
 .topnav .icon {
@@ -112,8 +120,11 @@ h5 {
 }
 
 .conf-date {
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  justify-content: space-evenly;
 }
 
 .when {
@@ -181,8 +192,9 @@ h5 {
 }
 
 .main-program {
-  /* margin: 0 auto; */
-  margin-left: 230px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  justify-content: center;
 }
 
 .slides {
@@ -213,6 +225,10 @@ h5 {
   text-align: center;
   font-size: small;
   margin: 0 2px;
+}
+
+.mobile-mobile {
+  display: none;
 }
 
 .entire-program-link {
@@ -267,11 +283,16 @@ h5 {
   padding-top: 1rem;
 }
 
+.partner-logo-cont {
+    width: 100%;
+    justify-content: center;
+    justify-content: space-around;
+}
+
 .partner-logo {
-  height: 100px;
-  justify-content: space-evenly;
-  width: 70%;
-  margin-left: 7rem;
+  height: 5rem;
+  justify-content: space-around;
+  width: 5rem;
   margin-top: 2rem;
 }
 
@@ -332,6 +353,12 @@ h5 {
     width: 100%;
     text-align: left;
   }
+
+  .topnav {
+    background-color: var(--first-color);
+    overflow: hidden;
+    height: auto;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -349,9 +376,9 @@ h5 {
 
   .conf-date {
     flex-direction: column;
-    margin-left: 5.5rem;
-    margin-right: auto;
+    margin-left: 13 rem;
     align-content: space-evenly;
+    align-items: center;
   }
 
   .when {
@@ -389,26 +416,74 @@ h5 {
   }
 
   .main-program {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 3rem;
-    gap: 1rem;
+    display: none;
   }
 
-  .slides:hover {
-    display: none;
+  .slides {
+    width: 90%;
+    height: 8rem;
+  }
+
+  .slide-img {
+    margin-top: 5rem;
+  }
+
+  .mobile-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 4rem;
+  } 
+
+  .mobile-main {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 90%;
+  }
+
+  .img-img {
+    justify-content: center; 
+    align-items: center;
+    margin-left: 0.5rem;
+  }
+
+  .img-img img {
+    margin-top: 0.5rem;
+    padding-left: 0;
+    margin-left: 0.5rem;
+  }
+
+  .head h4 {
+    margin-left: 2rem;
+    text-align: left;
+  }
+
+  .text p {
+    margin-left: 3rem;
+    padding: 0 1rem;
+    text-align: center;
+    width: 90%;
+
   }
 
   .partners-container {
     height: 10rem;
+    width: 100%;
   }
 
-  .partner-logo {
-    flex-direction: row;
-    margin-left: 6rem;
-    width: 40px;
-    height: 40px;
-    margin-top: 0.5rem;
+  .partner-logo-cont {
+    width: 100%;
     justify-content: center;
+    justify-content: space-around;
+}
+
+  .partner-logo {
+    width: 3rem;
+    height: 3rem;
+    margin-top: 0.5rem;
   }
 }
