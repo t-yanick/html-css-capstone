@@ -46,7 +46,7 @@ a {
   background-color: var(--first-color);
   overflow: hidden;
   padding-right: 10rem;
-  height: 4rem; 
+  height: 4rem;
   justify-content: flex-end;
 }
 
@@ -66,8 +66,8 @@ a {
 }
 
 .logo {
-    height: 4rem;
-    width: 4rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .topnav .icon {
@@ -120,7 +120,6 @@ h5 {
 }
 
 .conf-date {
-  justify-content: center;
   margin-top: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
@@ -284,9 +283,9 @@ h5 {
 }
 
 .partner-logo-cont {
-    width: 100%;
-    justify-content: center;
-    justify-content: space-around;
+  width: 100%;
+  justify-content: center;
+  justify-content: space-around;
 }
 
 .partner-logo {
@@ -376,7 +375,7 @@ h5 {
 
   .conf-date {
     flex-direction: column;
-    margin-left: 13 rem;
+    margin-left: 13rem;
     align-content: space-evenly;
     align-items: center;
   }
@@ -435,7 +434,7 @@ h5 {
     align-items: center;
     width: 80%;
     margin-left: 4rem;
-  } 
+  }
 
   .mobile-main {
     flex-direction: row;
@@ -446,7 +445,7 @@ h5 {
   }
 
   .img-img {
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     margin-left: 0.5rem;
   }
@@ -467,7 +466,6 @@ h5 {
     padding: 0 1rem;
     text-align: center;
     width: 90%;
-
   }
 
   .partners-container {
@@ -479,7 +477,7 @@ h5 {
     width: 100%;
     justify-content: center;
     justify-content: space-around;
-}
+  }
 
   .partner-logo {
     width: 3rem;

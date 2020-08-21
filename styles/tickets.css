@@ -39,7 +39,7 @@ a {
   background-color: var(--first-color);
   overflow: hidden;
   padding-right: 10rem;
-  height: 4rem; 
+  height: 4rem;
   justify-content: flex-end;
 }
 
@@ -58,8 +58,8 @@ a {
 }
 
 .logo {
-    height: 4rem;
-    width: 4rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .topnav .icon {

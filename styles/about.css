@@ -47,7 +47,7 @@ a {
   background-color: var(--first-color);
   overflow: hidden;
   padding-right: 10rem;
-  height: 4rem; 
+  height: 4rem;
   justify-content: flex-end;
 }
 
@@ -66,8 +66,8 @@ a {
 }
 
 .logo {
-    height: 4rem;
-    width: 4rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .topnav .icon {
@@ -204,10 +204,10 @@ h5 {
 }
 
 @media screen and (min-width: 768px)and (max-width: 840px) {
-.past-congress {
+  .past-congress {
     margin-left: 2rem;
     margin-right: 2rem;
-}
+  }
 }
 
 .past-congress-text {
@@ -391,7 +391,7 @@ h5 {
   }
 
   .about-text {
-      margin: 0 auto;
+    margin: 0 auto;
     width: 24rem;
   }
 
