@@ -248,6 +248,8 @@ h5 {
   width: 145px;
   height: 145px;
   cursor: pointer;
+  background-size: cover;
+  background-position: center;
 }
 
 .card-font {
@@ -360,6 +362,7 @@ h5 {
     padding-right: 0;
   }
 }
+   
 
 @media only screen and (max-width: 767px) {
   body {
@@ -486,3 +489,46 @@ h5 {
     margin-top: 0.5rem;
   }
 }
+
+@media only screen and (max-width: 360px) and (max-width: 545px) {
+  body {
+    /* overflow-x: hidden; */
+  }
+
+  .mobile-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .text p {
+    margin-left: 0.2rem;
+    padding: 0 0;
+    text-align: center;
+    width: 99%;
+    height: 100%;
+    font-size: 11px;
+  }
+
+  .head h4 {
+    margin-left: 0.3rem;
+    text-align: left;
+    font-size: 13px;
+  }
+
+  .submission-text {
+    width: 22rem;
+    letter-spacing: 0;
+  }
+
+  .submission-text h4 {
+    font-size: 18px;
+  }
+
+  .submission-text h5 {
+    font-size: 16px;
+  }
+} 
