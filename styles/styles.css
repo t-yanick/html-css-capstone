@@ -526,4 +526,19 @@ h5 {
   .submission-text h5 {
     font-size: 16px;
   }
+
+  @media only screen and (min-width: 300px) and (max-width: 359px) {
+    .submission-text {
+      width: 21rem;
+      letter-spacing: 0;
+    }
+  
+    .submission-text h4 {
+      font-size: 18px;
+    }
+  
+    .submission-text h5 {
+      font-size: 16px;
+    }
+  }
 }
