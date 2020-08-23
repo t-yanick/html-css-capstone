@@ -438,11 +438,11 @@ h5 {
   }
 
   .past-congress {
-    /* margin-left: 0;
-    margin-right: 6rem; */
     width: 100%;
-    /* height: 20rem; */
-    border: 2px solid green;
+  }
+
+  .past-congress-text p {
+    font-size: 1.5rem;
   }
 
   .buea-2014 {
